@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00BCA3"
+        tools:context=".MainActivity">
+
+    <Button
+            android:id="@+id/sort_title"
+            android:layout_width="62dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="216dp"
+            android:layout_marginBottom="8dp"
+            android:text="Sort Title"
+            app:layout_constraintBottom_toTopOf="@+id/movie_list"
+            app:layout_constraintStart_toEndOf="@+id/refresh"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+            android:id="@+id/sort_rating"
+            android:layout_width="76dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginBottom="8dp"
+            android:text="Sort Rating"
+            app:layout_constraintBottom_toTopOf="@+id/movie_list"
+            app:layout_constraintStart_toEndOf="@+id/refresh"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/movie_list"
+            android:layout_width="417dp"
+            android:layout_height="565dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+            android:id="@+id/refresh"
+            android:layout_width="85dp"
+            android:layout_height="51dp"
+            android:text="refresh"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.001" />
+
+    <Button
+            android:id="@+id/show_liked_button"
+            android:layout_width="73dp"
+            android:layout_height="51dp"
+            android:text="Show Liked"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.292"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.001" />
+
+    <Button
+            android:id="@+id/all"
+            android:layout_width="74dp"
+            android:layout_height="52dp"
+            android:text="show all"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
